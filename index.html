@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacos al Gusto | Mexican Catering in San Diego</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="hero">
+    <video class="hero-video" id="heroVideo" autoplay muted playsinline>
+      <source src="assets/hero-video-1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Tacos al Gusto</h1>
+      <p class="tagline">Authentic Mexican Catering in San Diego</p>
+      <a href="#quote" class="cta-btn">Request a Quote</a>
+    </div>
+    <div class="hero-overlay"></div>
+  </header>
+
+  <main>
+    <section class="package" id="package">
+      <div class="package-inner">
+        <h2>Menu Options</h2>
+        <div class="package-deal">
+          <span class="package-price">Choose any 2 Meat + 1 Veg Dish for $23.99</span>
+        </div>
+        <p class="package-note">* Every service includes sides of rice, beans and classic Mexican garnishes.</p>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container container--wide">
+        <h2 class="menu-title">Our Dishes</h2>
+        <div class="dish-grid">
+          <article class="dish-card dish-card--wide" data-category="Beef">
+            <img src="assets/bistek-ranchero.png" alt="Ranchero Style Beef Steak">
+            <div class="dish-card-content">
+              <span class="dish-badge">Beef</span>
+              <h3>Ranchero Style Beef Steak</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Beef">
+            <img src="assets/barbacoa.png" alt="Traditional Beef Barbacoa">
+            <div class="dish-card-content">
+              <span class="dish-badge">Beef</span>
+              <h3>Traditional Beef Barbacoa</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Chicken">
+            <img src="assets/chilaquiles.png" alt="Chicken Chilaquiles">
+            <div class="dish-card-content">
+              <span class="dish-badge">Chicken</span>
+              <h3>Chicken Chilaquiles (Red, Green)</h3>
+            </div>
+          </article>
+          <article class="dish-card dish-card--wide" data-category="Beef">
+            <img src="assets/mochomos.png" alt="Mochomos-style Crispy Shredded Beef">
+            <div class="dish-card-content">
+              <span class="dish-badge">Beef</span>
+              <h3>Mochomos-style Crispy Shredded Beef</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Seafood">
+            <img src="assets/marlin.png" alt="Marlin Fish Stew">
+            <div class="dish-card-content">
+              <span class="dish-badge">Seafood</span>
+              <h3>Marlin Fish Stew, Ranchero Style</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Vegetarian">
+            <img src="assets/colache.png" alt="Colache">
+            <div class="dish-card-content">
+              <span class="dish-badge">Vegetarian</span>
+              <h3>Colache: Zucchini and Corn Stew with Cream and Cheese</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Chicken">
+            <img src="assets/pollo-pimiento.png" alt="Chicken in Roasted Red Pepper Cream Sauce">
+            <div class="dish-card-content">
+              <span class="dish-badge">Chicken</span>
+              <h3>Chicken in Roasted Red Pepper Cream Sauce</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Vegetarian">
+            <img src="assets/tamal-poblano.png" alt="Corn Tamales in Green Chile Cream Sauce">
+            <div class="dish-card-content">
+              <span class="dish-badge">Vegetarian</span>
+              <h3>Corn Tamales in Green Chile Cream Sauce</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Vegetarian">
+            <img src="assets/enchiladas.png" alt="Roasted onion, poblano pepper & mushroom enchiladas">
+            <div class="dish-card-content">
+              <span class="dish-badge">Vegetarian</span>
+              <h3>Roasted onion, poblano pepper & mushroom enchiladas</h3>
+            </div>
+          </article>
+          <article class="dish-card" data-category="Vegetarian">
+            <img src="assets/poblano-tamal.png" alt="Poblano Pepper stuffed with Corn Tamale">
+            <div class="dish-card-content">
+              <span class="dish-badge">Vegetarian</span>
+              <h3>Poblano Pepper stuffed with Corn Tamale, Cream, and Cheese</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" id="quote">
+      <div class="container container--form">
+        <h2>Request a Quote</h2>
+        <form action="https://formspree.io/f/mreayzkj" method="POST" class="quote-form" id="quoteForm">
+          <input type="hidden" name="_subject" value="New Catering Quote Request - Tacos al Gusto">
+          <div class="form-row">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-row form-row--half">
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate" name="event_date">
+          </div>
+          <div class="form-row form-row--half">
+            <label for="guestCount">Approximate Guest Count</label>
+            <input type="number" id="guestCount" name="guest_count" min="1" placeholder="e.g. 50">
+          </div>
+          <div class="form-row">
+            <fieldset class="meat-selection">
+              <legend>Select 2 Meat Dishes</legend>
+              <div class="checkbox-group" data-max="2">
+                <label><input type="checkbox" name="meat_selection" value="Ranchero Style Beef Steak"> Ranchero Style Beef Steak</label>
+                <label><input type="checkbox" name="meat_selection" value="Mochomos-style Crispy Shredded Beef"> Mochomos-style Crispy Shredded Beef</label>
+                <label><input type="checkbox" name="meat_selection" value="Traditional Beef Barbacoa"> Traditional Beef Barbacoa</label>
+                <label><input type="checkbox" name="meat_selection" value="Chicken in Roasted Red Pepper Cream Sauce"> Chicken in Roasted Red Pepper Cream Sauce</label>
+                <label><input type="checkbox" name="meat_selection" value="Chicken Chilaquiles"> Chicken Chilaquiles (Red, Green)</label>
+                <label><input type="checkbox" name="meat_selection" value="Marlin Fish Stew"> Marlin Fish Stew, Ranchero Style</label>
+              </div>
+              <p class="form-hint" id="meatHint">Pick 2</p>
+            </fieldset>
+          </div>
+          <div class="form-row">
+            <label for="vegDish">Select 1 Vegetarian Dish</label>
+            <select id="vegDish" name="vegetarian_dish">
+              <option value="">-- Select one --</option>
+              <option value="Colache: Zucchini and Corn Stew with Cream and Cheese">Colache: Zucchini and Corn Stew with Cream and Cheese</option>
+              <option value="Corn Tamales in Green Chile Cream Sauce">Corn Tamales in Green Chile Cream Sauce</option>
+              <option value="Poblano Pepper stuffed with Corn Tamale, Cream, and Cheese">Poblano Pepper stuffed with Corn Tamale, Cream, and Cheese</option>
+              <option value="Roasted onion, poblano pepper & mushroom enchiladas">Roasted onion, poblano pepper & mushroom enchiladas</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Venue details, dietary restrictions, special requests..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Quote Request</button>
+        </form>
+        <div class="form-success" id="formSuccess" hidden>
+          <p>Thank you! Your quote request has been sent. We'll be in touch soon.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p class="contact-name">Christopher Aragon</p>
+      <a href="tel:+16192072610" class="contact-phone">(619) 207-2610</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
